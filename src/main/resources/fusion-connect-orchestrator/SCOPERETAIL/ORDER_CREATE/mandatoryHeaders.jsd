@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "eventType": "ORDER_CREATE",
+      "correlationId": "correlation-id",
+	  "tenantId":"tenantId"
+    }
+  ],
+  "required": [
+    "eventType",
+    "correlationId",
+	"tenantId"
+  ],
+  "properties": {
+    "eventType": {
+      "$id": "#/properties/eventType",
+      "type": "string",
+      "title": "The eventType schema",
+      "description": "Unique identifier of the type of event being sent.",
+      "default": "",
+      "examples": [
+        "ORDER_CREATE"
+      ],
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "correlationId": {
+      "$id": "#/properties/correlationId",
+      "type": "string",
+      "title": "The correlationId schema",
+      "description": "Unique identifier for tracking all related messages for a complete transaction or event chain.",
+      "default": "",
+      "examples": [
+        "correlation-id"
+      ],
+      "minLength": 1,
+      "maxLength": 36
+    },
+    "tenantId": {
+      "$id": "#/properties/tenantId",
+      "type": "string",
+      "title": "The tenantId schema",
+      "description": "Unique identifier for tenant",
+      "default": "",
+      "examples": [
+        "tenantId"
+      ],
+      "minLength": 1,
+      "maxLength": 20
+    }
+  },
+  "additionalProperties": true
+}

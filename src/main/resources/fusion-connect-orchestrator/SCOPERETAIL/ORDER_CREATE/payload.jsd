@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "properties": {
+    "orderType": {
+      "type": "string"
+    },
+    "requestId": {
+      "type": "string"
+    },
+    "customerId": {
+      "type": "string"
+    },
+    "lines": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "productId": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "productId",
+            "quantity"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "orderType",
+    "requestId",
+    "customerId",
+    "lines"
+  ]
+}
