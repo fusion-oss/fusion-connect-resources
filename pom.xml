@@ -18,7 +18,7 @@
 
 	<properties>
 		<fusion-connect-resources-core.version>0.1-SNAPSHOT</fusion-connect-resources-core.version>
-		<spring.version>2.6.4</spring.version>
+		<spring.version>2.6.6</spring.version>
 		<spring-cloud.version>3.1.1</spring-cloud.version>
 		<spotless.version>2.10.0</spotless.version>
 		<sonar.host.url>http://dev-ops.eastus2.cloudapp.azure.com/sonar/</sonar.host.url>
