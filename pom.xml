@@ -14,7 +14,7 @@
 	<version>0.1-SNAPSHOT</version>
 	<name>${project.artifactId}</name>
 	<description>Fusion connect resources</description>
-	<url>https://github.com/scoperetail-io/${project.artifactId}</url>
+	<url>https://github.com/fusion-oss/${project.artifactId}</url>
 
 	<properties>
 		<sonar.organization>fusion-oss</sonar.organization>
@@ -25,10 +25,10 @@
 
 	<scm>
 		<developerConnection>
-            scm:git:git@github.com:scoperetail-io/${project.artifactId}.git
+            scm:git:git@github.com:fusion-oss/${project.artifactId}.git
         </developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/scoperetail-io/${project.artifactId}</url>
+		<url>https://github.com/fusion-oss/${project.artifactId}</url>
 	</scm>
 
 	<developers>
@@ -71,18 +71,6 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.liquibase</groupId>
-				<artifactId>liquibase-maven-plugin</artifactId>
-				<configuration>
-					<propertyFile>src/main/resources/liquibase/liquibase-maven-plugin.properties</propertyFile>
-					<changeLogFile>src/main/resources/changelog/changelog.xml</changeLogFile>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 	<profiles>
 		<profile>
 			<id>release-spring</id>
