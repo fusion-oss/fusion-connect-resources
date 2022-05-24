@@ -18,7 +18,7 @@
 
 	<properties>
 		<sonar.organization>fusion-oss</sonar.organization>
-		<fusion-connect-resources-core.version>0.1-SNAPSHOT</fusion-connect-resources-core.version>
+		<fusion-connect-resources-core.version>0.5</fusion-connect-resources-core.version>
 		<spring.version>2.6.4</spring.version>
 		<spring-cloud.version>3.1.1</spring-cloud.version>
 	</properties>
